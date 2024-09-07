@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction Result</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body {
+            background-image: url('https://eos.com/wp-content/uploads/2020/03/cereal-grains-crops.jpg.webp'); /* Replace with your preferred background image */
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.6); /* Dark background with some transparency */
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .card h1 {
+            color: #00ff7f;
+        }
+
+        .card p {
+            color: #e0f7fa;
+        }
+
+        .button {
+            background-color: #00ff7f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #28a745;
+            box-shadow: 0 0 10px rgba(0, 255, 127, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Recommended Crop</h1>
+            <p>The best crop to sow based on the given soil conditions is: <strong>{{ suggestion_crops }}</strong></p>
+            <a href="/" class="button">Predict Again</a>
+        </div>
+    </div>
+</body>
+</html>

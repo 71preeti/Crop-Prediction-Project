@@ -1,0 +1,12 @@
+numpy
+matplotlib
+sci_kitlearn(sklearn)
+pandas
+joblib
+mongodb: MongoDB ek NoSQL database hai, jo document-oriented hai. Ye ek open-source database hai, jisme data ko JSON-like documents m store kiya jata hai, instead of tables and rows, jo relational databases m hota hai.
+json means like key value pair dtat store in it .
+RDBMS m data ko tables m organize kiya jata hai, jabki MongoDB m documents m.
+RDBMS m strict schema hota hai, jabki MongoDB m schema-less structure hota hai.
+RDBMS m join operations complex ho sakti hain, jabki MongoDB m embedded documents ya references ka use hota hai.
+pymongo
+

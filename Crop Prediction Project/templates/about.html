@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Crop Prediction System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            background: #006400;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.75rem;
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+        }
+
+        .hero-section {
+            background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*DgBgLhIFpIewoOObMTnhIw.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .bio-section {
+            padding: 60px 20px;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: -80px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .bio-section img {
+            border-radius: 50%;
+            border: 4px solid #28a745;
+            width: 350px;
+            height: 350px;
+        }
+
+        .bio-section h2 {
+            margin-top: 15px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .bio-section p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .project-details {
+            padding: 50px 20px;
+            background-color: #f8f9fa;
+            text-align: left;
+        }
+
+        .project-details h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #006400;
+        }
+
+        /* Background card for project details */
+        .project-details-card {
+            background: url('');
+            background-color: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .project-details ul {
+            font-size: 1.1rem;
+            color: #333;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .project-details ul li {
+            padding: 10px 0;
+            position: relative;
+        }
+
+        
+
+        footer {
+            padding: 20px;
+            background-color: #006400;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.3rem;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #28a745;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Crop Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>About the Crop Prediction System</h1>
+    </div>
+
+    <!-- Bio Section -->
+    <section class="bio-section"  >
+        <img src="static/photo.jpeg" alt="Your Photo">
+        <h2>Preeti Kuntal</h2>
+        <p>AI Enthusiast | Developer | Passionate about improving agriculture through technology</p>
+    </section>
+
+    <!-- Project Details Section with Background Card -->
+    <section class="project-details" style="background: url('');">
+        <h3>Project Overview</h3>
+        <div class="project-details-card">
+            <ul>
+                <li><strong>1. Purpose:</strong> This project aims to assist farmers by predicting the best crops to grow based on soil conditions like Nitrogen, Phosphorus, Potassium (NPK), temperature, pH level, humidity, and rainfall.</li>
+                <li><strong>2. Technology:</strong> The project uses machine learning algorithms to analyze soil and weather data for accurate predictions.</li>
+                <li><strong>3. User Input:</strong> Farmers enter soil data (NPK values, pH, temperature, humidity, and rainfall) into the system.</li>
+                <li><strong>4. Prediction:</strong> Based on the input, the system suggests the most suitable crops for optimal yield.</li>
+                <li><strong>5. Benefits:</strong> Helps farmers save time and resources by providing data-driven crop recommendations, leading to better crop yield and sustainable farming.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2024 Crop Prediction System</p>
+        <a href=""> Contact us 👉 </a>
+        <a href="https://github.com/71preeti"><i class="fab fa-github">Github</i></a>
+        <a href="https://www.linkedin.com/in/preeti-kuntal"><i class="fab fa-linkedin-in">Linkedin</i></a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
